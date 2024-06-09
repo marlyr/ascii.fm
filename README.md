@@ -1,4 +1,4 @@
-# Last.fm CLI
+# ascii.fm
 
 A command-line interface for displaying album art from Last.fm music data.
 
