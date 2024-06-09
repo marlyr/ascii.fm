@@ -1,6 +1,6 @@
 # ascii.fm
 
-A command-line interface for displaying album art from Last.fm music data.
+A command-line tool for displaying album art from last.fm music data.
 
 ## Description
 
@@ -8,7 +8,7 @@ Users can retrieve the album art of their most recently played track, or search 
 
 ## Features
 
-- Retrieve the most recently played track for a specified Last.fm user.
+- Retrieve the most recently played track for a specified last.fm user.
 - Search by album and artist.
 - Retrieve top album for a specified artist.
 - Display album covers as ASCII art in the terminal.
@@ -34,8 +34,9 @@ Users can retrieve the album art of their most recently played track, or search 
     ```bash
     pip install -r requirements.txt
     ```
+4. Create an API key for [last.fm](https://www.last.fm/api).
 
-4. Set up your environment variables by creating a `.env` file in the project directory and adding your Last.fm API key:
+4. Set up your environment variables by creating a `.env` file in the project directory and adding your last.fm API key:
 
     ```
     API_KEY=your_last_fm_api_key
@@ -65,5 +66,3 @@ python main.py --artist "Artist Name"
 python main.py --album "Album Name" --artist "Artist Name"
 ```
 
-## Resources
-[Last.fm API Documentation](https://www.last.fm/api)
