@@ -18,8 +18,8 @@ Users can retrieve the album art of their most recently played track, or search 
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/marlyr/last.fm-CLI.git
-    cd last.fm-CLI
+    git clone https://github.com/marlyr/ascii.fm.git
+    cd ascii.fm
     ```
 
 2. Create and activate a virtual environment (optional but recommended):
