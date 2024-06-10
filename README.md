@@ -22,21 +22,14 @@ Users can retrieve the album art of their most recently played track, or search 
     cd ascii.fm
     ```
 
-2. Create and activate a virtual environment (optional but recommended):
-
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-    ```
-
-3. Install the required packages:
+2. Install the required packages:
 
     ```bash
     pip install -r requirements.txt
     ```
-4. Create an API key for [last.fm](https://www.last.fm/api).
+3. Create an API key for [last.fm](https://www.last.fm/api).
 
-4. Set up your environment variables by creating a `.env` file in the project directory and adding your last.fm API key:
+4. Create a `.env` file in the project directory and add your last.fm API key:
 
     ```
     API_KEY=your_last_fm_api_key
@@ -47,22 +40,22 @@ Users can retrieve the album art of their most recently played track, or search 
 ### Display the most recently played track for a user
 
 ```bash
-python main.py --username your_last_fm_username
+python asciifm.py --username your_last_fm_username
 ```
 
 ### Search for an album
 ```bash
-python main.py --album "Album Name"
+python asciifm.py --album "Album Name"
 ```
 
 ### Search for an artist's top album
 ```bash
-python main.py --artist "Artist Name"
+python asciifm.py --artist "Artist Name"
 ```
 
 ### Search for a specific album by a specific artist
 
 ```bash
-python main.py --album "Album Name" --artist "Artist Name"
+python asciifm.py --album "Album Name" --artist "Artist Name"
 ```
 
