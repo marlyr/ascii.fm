@@ -87,6 +87,7 @@ def main():
     client = LastFMClient(API_KEY)
     display_album_art(client, args.username, args.album, args.artist)
 
+
 def get_args():
     parser = argparse.ArgumentParser(description='A command-line tool for displaying album art from last.fm music data.')
     parser.add_argument('-u', '--username', type=str, help='Specify Last.fm username to display most recently played track.', required=False, dest='username')
@@ -99,6 +100,7 @@ def get_args():
         sys.exit()
     
     return args
+
 
 def display_album_art(client, username=None, album=None, artist=None):
     if username:
@@ -118,7 +120,7 @@ def display_album_art(client, username=None, album=None, artist=None):
         print()
         art.to_terminal(columns=80)
     except ValueError:
-        sys.exit('Album not found.')
+        sys.exit('Album image not found.')
 
 
 if __name__ == '__main__':
